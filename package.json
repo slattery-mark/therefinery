@@ -1,0 +1,23 @@
+{
+  "name": "therefinery",
+  "version": "1.0.0",
+  "description": "Steam game recommender based on custom criteria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start http://localhost:3000 && node index.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slattery-mark/therefinery.git"
+  },
+  "author": "CJ Fox, Mark Slattery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slattery-mark/therefinery/issues"
+  },
+  "homepage": "https://github.com/slattery-mark/therefinery#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
