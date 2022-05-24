@@ -1,11 +1,15 @@
 {
   "name": "therefinery",
   "version": "1.0.0",
-  "description": "Steam game recommender based on custom criteria",
+  "description": "Steam game recommender",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "start http://localhost:3000 && node index.js" 
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "16.13.0"
   },
   "repository": {
     "type": "git",
