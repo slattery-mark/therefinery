@@ -1,0 +1,6 @@
+.home-page {
+    background-color: var(--clr-primary-bg);
+    display: flex;
+    height: 100%;
+    width: 100%;
+}

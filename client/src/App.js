@@ -1,5 +1,9 @@
-import React from "react";
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/layout/header';
+import Footer from './components/layout/footer';
+import HomePage from "./components/views/homepage";
+import SideBar from "./components/layout/sidebar";
 import './App.css';
 
 function App() {
@@ -8,25 +12,20 @@ function App() {
   React.useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((data) => {
+        setData(data.message);
+        console.log(data.message);
+      });
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <SideBar />
+      <Routes>
+        <Route index element={<HomePage />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
