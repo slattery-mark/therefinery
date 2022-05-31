@@ -1,7 +1,8 @@
 import React from "react";
-import logo from './logo.svg';
 import Header from './components/layout/header/header';
 import Footer from './components/layout/footer/footer';
+import HomePage from "./components/homepage/homepage";
+import SidePanel from "./components/layout/side-panel/side-panel";
 import './App.css';
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
   return (
     <div className="App">
       < Header />
-      <div></div>
-      <Footer />
+      < SidePanel />
+      < HomePage />
+      < Footer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 .footer {
     align-items: center;
-    background-color: var(--clr-primary-bg);
+    background-color: var(--clr-header-footer-bg);
     box-sizing: border-box;
     display: flex;
     height: 75px;

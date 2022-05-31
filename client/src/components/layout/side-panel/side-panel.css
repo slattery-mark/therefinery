@@ -1,0 +1,6 @@
+.side-panel {
+    background-color: var(--clr-card-bg);
+    display: flex;
+    height: 100%;
+    width: 262px;
+}
