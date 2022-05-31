@@ -6,7 +6,7 @@ import './header.css';
 const Header = () => {
     return (
         <header className='header'>
-            <Link to={'/'}>< SiteLogo /></Link>
+            <Link to='/'><SiteLogo /></Link>
         </header>
     )
 }

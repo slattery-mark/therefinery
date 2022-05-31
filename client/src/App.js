@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/header';
 import Footer from './components/layout/footer';
 import HomePage from "./components/views/homepage";
@@ -18,10 +19,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <SideBar />
-      <HomePage />
+      <Routes>
+        <Route index element={<HomePage />} />
+      </Routes>
       <Footer />
     </div>
   );
