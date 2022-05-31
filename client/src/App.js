@@ -1,9 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/layout/header';
-import Footer from './components/layout/footer';
+import Layout from './components/layout/layout';
 import HomePage from "./components/views/homepage";
-import SideBar from "./components/layout/sidebar";
 import './App.css';
 
 function App() {
@@ -19,14 +17,11 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
-      <Header />
-      <SideBar />
-      <Routes>
+    <Routes>
+      <Route exact path='/' element={<Layout />}>
         <Route index element={<HomePage />} />
-      </Routes>
-      <Footer />
-    </div>
+      </Route>
+    </Routes>
   );
 }
 

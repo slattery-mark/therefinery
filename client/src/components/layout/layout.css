@@ -1,0 +1,22 @@
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    text-align: center;
+}
+
+.header {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
