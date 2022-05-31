@@ -11,11 +11,16 @@
 
 .footer__description-text {
     color: var(--clr-body-text);
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
     width: 230px;
 }
 
 .footer__github-logo {
     font-size: 24px;
+    transition: .5s;
+}
+
+.footer__github-logo:hover {
+    font-size: 28px;
 }
