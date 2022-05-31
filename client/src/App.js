@@ -1,8 +1,8 @@
 import React from "react";
-import Header from './components/layout/header/header';
-import Footer from './components/layout/footer/footer';
-import HomePage from "./components/homepage/homepage";
-import SidePanel from "./components/layout/side-panel/side-panel";
+import Header from './components/layout/header';
+import Footer from './components/layout/footer';
+import HomePage from "./components/views/homepage";
+import SideBar from "./components/layout/sidebar";
 import './App.css';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       < Header />
-      < SidePanel />
+      < SideBar />
       < HomePage />
       < Footer />
     </div>

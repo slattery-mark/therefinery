@@ -17,10 +17,12 @@
 }
 
 .footer__github-logo {
-    font-size: 24px;
+    color: var(--clr-body-text);
+    font-size: 30px;
     transition: .5s;
 }
 
 .footer__github-logo:hover {
-    font-size: 28px;
+    color: white;
+    transform: scale(1.2);
 }
