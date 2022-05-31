@@ -1,0 +1,22 @@
+.searchbox {
+    background-color: var(--clr-searchbox-bg);
+    border: 1px solid #000;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 #45556c;
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: .8rem;
+    font-family: inherit;
+    padding: 0 10px;
+    height: 1.5rem;
+    width: 230px;
+}
+
+.searchbox::placeholder {
+    color: #909090;
+    font-style: italic;
+}
+
+.searchbox:focus {
+    outline: 1px solid var(--clr-card-highlight);
+}

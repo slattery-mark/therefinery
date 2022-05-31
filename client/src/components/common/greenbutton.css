@@ -1,0 +1,32 @@
+.green-button {
+    align-items: center;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #799905 15%, #536904 85%);
+    border: none;
+    border-radius: 2px;
+    color: #D2E885;
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.green-button__border {
+    background: linear-gradient(180deg, #A4D007 5%, #536904 70%);
+    border-radius: 2px;
+    position: relative;
+    max-width: 250px;
+    padding: 2px;
+}
+
+.green-button__border:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #B6D908 15%, #80A006 85%);
+}
+
+.green-button__border:hover > .green-button {
+    color: #FFF;
+    cursor: pointer;
+    background: linear-gradient(180deg, #A1BF07 5%, #80A006 70%);
+}

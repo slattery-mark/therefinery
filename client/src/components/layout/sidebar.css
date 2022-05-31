@@ -1,6 +1,11 @@
 .sidebar {
     background-color: var(--clr-card-bg);
+    box-sizing: border-box;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 15px 0;
     height: 100%;
     width: 262px;
 }

@@ -4,3 +4,18 @@
     height: 100%;
     width: 100%;
 }
+
+.info {
+    display: flex;
+    flex-direction: row;
+    height: 210px;
+    margin-left: 10px;
+}
+
+.info__site-description-text {
+    color: var(--clr-body-text);
+    text-align: center;
+    font-size: 1rem;
+    align-self: end;
+    width: 350px;
+}
