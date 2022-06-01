@@ -6,8 +6,10 @@ const HomePage = () => {
     return (
         <div className='homepage'>
             <div className='info'>
-                <Arrow />
-                <p className='info__site-description-text'>Enter your Steam ID to get game recommendations, enter 2 Steam IDs to get recommendations to enjoy with a friend.</p>
+                <Arrow className='info__arrow' />
+                <div className='info__site-description'>
+                    <p className='info__site-description-text'>Enter your Steam ID to get game recommendations, enter 2 Steam IDs to get recommendations to enjoy with a friend.</p>
+                </div>
             </div>
         </div>
     )

@@ -5,5 +5,34 @@
     display: flex;
     height: 75px;
     padding: 0 26px;
+    position: relative;
     width: 100%;
+}
+
+.hamburger {
+    position: absolute;
+    top: 25px;
+    right: 26px;
+}
+
+.header a {
+    width: 160px;
+}
+
+.logo {
+    height: 15.75px;
+    width: 158.25px;
+}
+
+@media screen and (min-width: 25em) {
+    .logo {
+        height: 21px; 
+        width: 211px; 
+    }
+}
+
+@media screen and (min-width: 30em) {
+    .hamburger {
+        display: none;
+    }
 }
