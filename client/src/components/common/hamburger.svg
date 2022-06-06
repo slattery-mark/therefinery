@@ -1,5 +1,5 @@
 <svg width="25" height="21" viewBox="0 0 25 21" xmlns="http://www.w3.org/2000/svg">
-    <rect class="firstbar" width="25" height="4.2" />
-    <rect class="secondbar" y="8.39999" width="25" height="4.2" />
-    <rect class="thirdbar" y="16.8" width="25" height="4.2" />
+    <rect class="hamburger__firstbar" width="25" height="4.2" />
+    <rect class="hamburger__secondbar" y="8.39999" width="25" height="4.2" />
+    <rect class="hamburger__thirdbar" y="16.8" width="25" height="4.2" />
 </svg>

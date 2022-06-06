@@ -7,7 +7,7 @@ import './searchbox.css';
  */
 const SearchBox = ({ placeholder }) => {
     return (
-        <input type='text' className='searchbox' placeholder={ placeholder }></input>
+        <input type='text' className='searchbox' placeholder={ placeholder } />
     )
 }
 

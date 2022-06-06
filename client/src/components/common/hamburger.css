@@ -10,29 +10,29 @@
     right: 11px;
 }
 
-.firstbar, .secondbar, .thirdbar {
+.hamburger__firstbar, .hamburger__secondbar, .hamburger__thirdbar {
     transition: all 0.35s ease-in-out;
     transform: rotate(0deg);
     
 }
 
-.firstbar {
+.hamburger__firstbar {
     transform-origin: 4% 15%;
 }
 
-.thirdbar {
+.hamburger__thirdbar {
     transform-origin: 4% 85%;
 }
 
-.close .firstbar {
+.hamburger--closed .hamburger__firstbar {
     transform: rotate(45deg) translateX(5%) translateY(-5%);
 }
 
-.close .secondbar {
+.hamburger--closed .hamburger__secondbar {
     opacity: 0;
 }
 
-.close .thirdbar {
+.hamburger--closed .hamburger__thirdbar {
     transform: rotate(-45deg)  translateX(5%) translateY(7%);
 }
 

@@ -13,13 +13,13 @@
     width: 160px;
 }
 
-.logo {
+.header__logo {
     height: 15.75px;
     width: 158.25px;
 }
 
 @media screen and (min-width: 21em) {
-    .logo {
+    .header__logo {
         height: 21px; 
         width: 211px; 
     }

@@ -13,7 +13,7 @@ import './header.css';
 const Header = ({ toggleMenuFunc, open }) => {
     return (
         <header className='header'>
-            <Link to='/'><SiteLogo className='logo' /></Link>
+            <Link to='/'><SiteLogo className='header__logo' /></Link>
             <Hamburger toggleMenuFunc={toggleMenuFunc} open={open} />
         </header>
     )

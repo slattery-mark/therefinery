@@ -12,10 +12,10 @@
     width: 100%;
 }
 
-.open {
+.sidebar--open {
     left: 0;
 }
 
-.closed {
+.sidebar--closed {
     left: -100%;
 }
