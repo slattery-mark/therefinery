@@ -8,7 +8,7 @@
     gap: 24px;
     padding: 24px 15px 0;
     position: absolute;
-    transition: .5s ease-in-out;
+    transition: left .5s ease-in-out;
     width: 100%;
 }
 
@@ -18,4 +18,10 @@
 
 .sidebar--closed {
     left: -100%;
+}
+
+@media screen and (min-width: 30em) {
+    .sidebar {
+        height: 100%;
+    }
 }
