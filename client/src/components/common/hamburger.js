@@ -1,12 +1,13 @@
 import React from 'react';
+
 import { ReactComponent as Burger } from './hamburger.svg';
 import './hamburger.css';
 
-const Hamburger = () => {
+const Hamburger = ({ toggleMenuFunc, open }) => {
     return (
-        <div className='hamburger'>
+        <button className={ open ? 'hamburger close' : 'hamburger' } onClick={toggleMenuFunc}>
             <Burger />
-        </div>
+        </button>
     )
 }
 

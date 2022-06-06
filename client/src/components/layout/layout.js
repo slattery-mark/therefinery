@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
+
 import Header from './header';
 import SideBar from './sidebar';
 import Footer from './footer';
 import './layout.css';
 
 const Layout = () => {
+    const [open, toggleMenu] = useState(true);
+    const toggleMenuFunc = () => toggleMenu(!open);
+
     return (
         <div className='layout'>
-            <Header />
-            <SideBar />
+            <Header toggleMenuFunc={toggleMenuFunc} open={open} />
+            <SideBar open={open}/>
             <Outlet />
             <Footer />
         </div>
