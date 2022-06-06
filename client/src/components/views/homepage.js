@@ -1,7 +1,11 @@
 import React from 'react';
+
 import { ReactComponent as Arrow } from '../common/arrow.svg'
 import './homepage.css';
 
+/**
+ * The home page of the app.
+ */
 const HomePage = () => {
     return (
         <div className='homepage'>

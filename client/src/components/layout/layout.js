@@ -6,6 +6,9 @@ import SideBar from './sidebar';
 import Footer from './footer';
 import './layout.css';
 
+/**
+ * The component that controls the high-level layout of the app.
+ */
 const Layout = () => {
     const [open, toggleMenu] = useState(true);
     const toggleMenuFunc = () => toggleMenu(!open);

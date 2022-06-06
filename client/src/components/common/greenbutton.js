@@ -1,10 +1,16 @@
 import React from "react";
+
 import './greenbutton.css';
 
-const GreenButton = ({ text }) => {
+/**
+ * A large green button with text.
+ * @param {Function} func the function executed by the button's onClick attribute
+ * @param {String} text the text to appear on the button 
+ */
+const GreenButton = ({ func, text }) => {
     return (
         <div className="green-button__border">
-            <button className="green-button">{text}</button>
+            <button className="green-button" onClick={func} >{text}</button>
         </div>
     )
 }
