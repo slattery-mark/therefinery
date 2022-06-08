@@ -13,7 +13,10 @@ const SearchForm = () => {
 
     const submitHandler = e => {
         e.preventDefault();
-        (!steamIDs.secondID) ? navigate(`/results/${steamIDs.firstID}`) : navigate(`/results/${steamIDs.firstID}+${steamIDs.secondID}`);
+        if (!steamIDs.secondID) 
+            navigate(`/results/${steamIDs.firstID}`);
+        else 
+            navigate(`/results/${steamIDs.firstID}/${steamIDs.secondID}`);
     }
 
     return (

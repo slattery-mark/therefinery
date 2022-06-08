@@ -8,7 +8,7 @@ const ResultsPage = () => {
 
     React.useEffect(() => {
         console.log(params);
-    }, []);
+    }, [params]);
 
     return (
         <div className='results-page'>

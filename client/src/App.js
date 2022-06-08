@@ -22,8 +22,9 @@ function App() {
       <Route exact path='/' element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="/results/*">
-          <Route path=':firstID' element={<ResultsPage />} />
-          <Route path=':firstID+:secondID' element={<ResultsPage />} />
+          <Route path=':firstID/' element={<ResultsPage />}>
+            <Route path=':secondID/' element={<ResultsPage />} />
+          </Route>
         </Route>
       </Route>
     </Routes>
