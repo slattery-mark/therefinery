@@ -1,7 +1,6 @@
 import React from 'react';
 
-import SearchBox from '../common/searchbox';
-import GreenButton from '../common/greenbutton';
+import SearchForm from '../common/searchform';
 import './sidebar.css';
 
 /**
@@ -11,9 +10,7 @@ import './sidebar.css';
 const SideBar = ({ open }) => {
     return (
         <div className={ open ? 'sidebar sidebar--open' : 'sidebar sidebar--closed' }>
-            <SearchBox placeholder={"Enter Steam ID"} />
-            <SearchBox placeholder={"Enter Second Steam ID (Optional)"} />
-            <GreenButton func={null} text={"Recommend"}/>
+            <SearchForm />
         </div>
     )
 }

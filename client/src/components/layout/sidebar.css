@@ -1,11 +1,9 @@
 .sidebar {
-    align-items: center;
     background-color: var(--clr-card-bg);
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     height: calc(100vh - 75px);
-    gap: 24px;
+    justify-content: center;
     padding: 24px 15px 0;
     position: absolute;
     transition: left .5s ease-in-out;
