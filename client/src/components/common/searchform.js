@@ -13,8 +13,8 @@ const SearchForm = () => {
 
     const submitHandler = e => {
         e.preventDefault();
-        let search;
 
+        let search;
         if (!steamIDs.firstID) 
             search = undefined;
         else if (!steamIDs.secondID)

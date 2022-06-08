@@ -18,18 +18,31 @@ const HomePage = () => {
 
     return (
         <div className='homepage'>
-
-            {(!steamIDs.firstID && !steamIDs.secondID) ?
-                <div className='info'>
-                    <Arrow className='info__arrow' />
-                    <div className='info__site-description'>
-                        <p className='info__site-description-text'>Enter your Steam ID to get game recommendations, enter 2 Steam IDs to get recommendations to enjoy with a friend.</p>
+            {
+                /* default page - no search parameters */
+                (!steamIDs.firstID && !steamIDs.secondID) ?
+                    <div className='info'>
+                        <Arrow className='info__arrow' />
+                        <div className='info__site-description'>
+                            <p className='info__site-description-text'>Enter your Steam ID to get game recommendations, enter 2 Steam IDs to get recommendations to enjoy with a friend.</p>
+                        </div>
                     </div>
-                </div>
-                : null}
-            {steamIDs.firstID ? <h1>First: {steamIDs.firstID}</h1> : null}
-            {steamIDs.secondID ? <h1>Second: {steamIDs.secondID}</h1> : null}
+                    : null
+            }
 
+            {
+                /* search results with 1 steam ID */
+                steamIDs.firstID ?
+                    <h2>First: {steamIDs.firstID}</h2>
+                    : null
+            }
+
+            {
+                /* search results with 2 steam IDs */
+                steamIDs.secondID ?
+                    <h2>First: {steamIDs.secondID}</h2>
+                    : null
+            }
         </div>
     )
 }
