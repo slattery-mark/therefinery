@@ -40,7 +40,7 @@ const HomePage = () => {
             {
                 /* search results with 2 steam IDs */
                 steamIDs.secondID ?
-                    <h2>First: {steamIDs.secondID}</h2>
+                    <h2><br />Second: {steamIDs.secondID}</h2>
                     : null
             }
         </div>
