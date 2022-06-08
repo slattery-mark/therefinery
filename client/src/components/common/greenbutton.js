@@ -10,7 +10,7 @@ import './greenbutton.css';
 const GreenButton = ({ func, text }) => {
     return (
         <div className="green-button__border">
-            <button className="green-button" onClick={func} >{text}</button>
+            <button className="green-button" onClick={func ? null : func} >{text}</button>
         </div>
     )
 }
