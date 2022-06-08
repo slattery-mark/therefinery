@@ -4,17 +4,17 @@ import { useParams } from 'react-router-dom';
 import './resultspage.css';
 
 const ResultsPage = () => {
-    const params = useParams();
+    const { firstID, secondID } = useParams();
 
     React.useEffect(() => {
-        console.log(params);
-    }, [params]);
+
+    }, [firstID, secondID]);
 
     return (
         <div className='results-page'>
-            <p>First ID: {params.firstID}</p>
-            {params.secondID ?
-                <p><br />Second ID: {params.secondID}</p>
+            <p>First ID: {firstID}</p>
+            {secondID ?
+                <p><br />Second ID: {secondID}</p>
                 : null}
         </div>
     )
