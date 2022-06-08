@@ -12,6 +12,10 @@ const ResultsPage = () => {
 
     return (
         <div className='results-page'>
+            <p>First ID: {params.firstID}</p>
+            {params.secondID ?
+                <p><br />Second ID: {params.secondID}</p>
+                : null}
         </div>
     )
 }
