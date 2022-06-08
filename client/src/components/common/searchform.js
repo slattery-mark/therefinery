@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import SearchBox from './searchbox';
 import GreenButton from './greenbutton';
 import './searchform.css';
@@ -8,20 +8,24 @@ import './searchform.css';
  * The form on the sidebar containing 2 searchboxes and 1 green button.
  */
 const SearchForm = () => {
-    const [steamIDs, setSteamIDs] = useState({ firstID: "", secondID: "" })
-    const navigate = useNavigate();
+    const [steamIDs, setSteamIDs] = useState({ firstID: "", secondID: "" });
+    const [searchParams, setSearchParams] = useSearchParams();
 
     const submitHandler = e => {
         e.preventDefault();
+        let search;
+
+        if (!steamIDs.firstID) 
+            search = undefined;
+        else if (!steamIDs.secondID)
+            search = { firstID: steamIDs.firstID };
+        else
+            search = {
+                firstID: steamIDs.firstID,
+                secondID: steamIDs.secondID
+            };
         
-        if (!steamIDs.firstID) {
-        }
-        else if (!steamIDs.secondID) { 
-            navigate(`/results/${steamIDs.firstID}`);
-        }
-        else {
-            navigate(`/results/${steamIDs.firstID}/${steamIDs.secondID}`);
-        }
+        setSearchParams(search, { replace: true });
     }
 
     return (
