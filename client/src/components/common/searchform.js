@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import SearchBox from './searchbox';
 import GreenButton from './greenbutton';
 import './searchform.css';
@@ -9,10 +9,11 @@ import './searchform.css';
  */
 const SearchForm = () => {
     const [steamIDs, setSteamIDs] = useState({ firstID: "", secondID: "" })
+    const navigate = useNavigate();
 
     const submitHandler = e => {
         e.preventDefault();
-        console.log(steamIDs)
+        (!steamIDs.secondID) ? navigate(`/results/${steamIDs.firstID}`) : navigate(`/results/${steamIDs.firstID}+${steamIDs.secondID}`);
     }
 
     return (
