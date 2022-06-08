@@ -10,7 +10,7 @@ import './hamburger.css';
  */
 const Hamburger = ({ toggleMenuFunc, open }) => {
     return (
-        <button className={ open ? 'hamburger hamburger--closed' : 'hamburger' } onClick={toggleMenuFunc}>
+        <button className={ open ? 'hamburger hamburger--closed' : 'hamburger' } onClick={toggleMenuFunc} aria-label="Hamburger Menu">
             <Burger />
         </button>
     )
