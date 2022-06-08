@@ -1,4 +1,4 @@
-.searchbox {
+.searchbox > input {
     background-color: var(--clr-searchbox-bg);
     border: 1px solid #000;
     border-radius: 3px;
@@ -12,11 +12,15 @@
     width: 230px;
 }
 
-.searchbox::placeholder {
+.searchbox > input::placeholder {
     color: #909090;
     font-style: italic;
 }
 
-.searchbox:focus {
+.searchbox > input:focus {
     outline: 1px solid var(--clr-card-highlight);
+}
+
+.searchbox > label {
+    visibility: hidden;
 }
