@@ -8,19 +8,19 @@ import './homepage.css';
  */
 const HomePage = () => {
     const [searchParams] = useSearchParams();
-    const [steamIDs, setSteamIDs] = useState({ firstID: '', secondID: '' });
+    const [steamIds, setSteamIds] = useState({ steamId1: '', steamId2: '' });
 
     useEffect(() => {
-        let firstID = searchParams.get('firstID');
-        let secondID = searchParams.get('secondID');
-        setSteamIDs({ firstID: firstID, secondID: secondID });
+        let steamId1 = searchParams.get('steamId1');
+        let steamId2 = searchParams.get('steamId2');
+        setSteamIds({ steamId1: steamId1, steamId2: steamId2 });
     }, [searchParams])
 
     return (
         <div className='homepage'>
             {
                 /* default page - no search parameters */
-                (!steamIDs.firstID && !steamIDs.secondID) ?
+                (!steamIds.steamId1 && !steamIds.steamId2) ?
                     <div className='info'>
                         <Arrow className='info__arrow' />
                         <div className='info__site-description'>
@@ -32,15 +32,15 @@ const HomePage = () => {
 
             {
                 /* search results with 1 steam ID */
-                steamIDs.firstID ?
-                    <h2>First: {steamIDs.firstID}</h2>
+                steamIds.steamId1 ?
+                    <h2>First: {steamIds.steamId1}</h2>
                     : null
             }
 
             {
                 /* search results with 2 steam IDs */
-                steamIDs.secondID ?
-                    <h2><br />Second: {steamIDs.secondID}</h2>
+                steamIds.steamId2 ?
+                    <h2><br />Second: {steamIds.steamId2}</h2>
                     : null
             }
         </div>
