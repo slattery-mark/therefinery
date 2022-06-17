@@ -9,6 +9,7 @@
   --clr-card-highlight: #00BBFF;
   --clr-tag-bg: #4b4b4b;
   --clr-searchbox-bg: #2A3D5A;
+  --clr-searchbox-disabled-bg: #1c283b;
 
   /* fonts */
   --ff-regular: 'Inter', sans-serif;

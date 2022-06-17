@@ -24,3 +24,12 @@
 .searchbox > label {
     visibility: hidden;
 }
+
+.searchbox > input:disabled::placeholder {
+    color: #555555;
+    font-style: italic;
+}
+
+.searchbox > input:disabled {
+    background-color: var(--clr-searchbox-disabled-bg);
+}

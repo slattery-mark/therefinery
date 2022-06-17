@@ -8,11 +8,11 @@ import './searchbox.css';
  * @param {String} value the initial value of the input
  * @param {String} func the function to execute onChange
  */
-const SearchBox = ({ placeholder, value, name, func }) => {
+const SearchBox = ({ disabled, placeholder, value, name, func }) => {
     return (
         <div className='searchbox'>
             <label htmlFor={name} />
-            <input type='text' name={name} value={value} onChange={func} placeholder={placeholder} />
+            <input disabled={disabled} type='text' name={name} value={value} onChange={func} placeholder={placeholder} />
         </div>
     )
 }
